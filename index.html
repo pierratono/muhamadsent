@@ -29,16 +29,18 @@
 
     <!-- Top Search Form Area -->
     <div class="top-search-area">
-        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal fade" id="hireModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
                         <!-- Close -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i></button>
                         <!-- Form -->
-                        <form action="index.html" method="post">
-                            <input type="search" name="top-search-bar" class="form-control" placeholder="Search and hit enter...">
-                            <button type="submit">Search</button>
+                        <form action="#.php" method="post">
+                            <input type="text" name="name" class="form-control" placeholder="Your name">
+                            <input type="text" name="email" class="form-control" placeholder="YourEmail">
+                            <textarea class="form-control" name="message" placeholder="Message" rows="10"></textarea>
+                            <input type="submit" class="btn" value="Send">
                         </form>
                     </div>
                 </div>
@@ -98,22 +100,49 @@
     <section class="welcome-area" id="top">
         <div class="welcome-slides owl-carousel">
             <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12 col-lg-8 col-xl-6">
-                            <div class="welcome-text">
-                                <h2 data-animation="bounceInDown" data-delay="900ms" style="font-size: 70px">Hello <br>I'm Muhamad</h2>
-                                <p data-animation="bounceInDown" data-delay="500ms">Photographer and Filmmaker</p>
-                                <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
-                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">Hire me !</a>
-                                    <a class="hero-mail-contact" href="mailto:muhamadsentongo1995@gmail.com">muhamadsentongo1995@gmail.com</a>
+            <div class="bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+                <!-- <div class="container h-100"> -->
+
+                    <div class="row h-100 align-items-center" >
+
+                        <div  style="margin-right:250px;margin-top: 100px;">
+
+                                <div style="background-color:#f4f4f4b6;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%; ">
+                                        <div style="flex: 1; padding: 20px;">
+                                                <img src="img/bg-img/me.png" class="sent"/>
+                                        </div>
+                                        <div style="flex: 4;">
+                                                <!-- <div class="col-12 col-lg-8 col-xl-6"> -->
+                                                        <div class="welcome-text">
+                                                            <h2 data-animation="bounceInDown" data-delay="900ms" style="font-size: 70px">Hello <br>I'm Muhamad</h2>
+                                                            <p data-animation="bounceInDown" data-delay="500ms">Photographer and Filmmaker</p>
+                                                            <div class="data-animation" data-animation="bounceInDown" data-delay="100ms">
+                                                                <a data-toggle="modal" data-target="#hireModal" class="btn alime-btn mb-3 mb-sm-0 mr-4">Hire me !</a>
+                                                                <a class="hero-mail-contact" href="mailto:muhamadsentongo1995@gmail.com">muhamadsentongo1995@gmail.com</a>
+                                                            </div>
+                                                        </div>
+                                                    <!-- </div> -->
+                                        </div>
+                                        <div style="flex: 3">
+                                                <img src="img/bg-img/animal.png" class="sent"/>
+                                        </div>
                                 </div>
-                            </div>
+
+
+
                         </div>
+
+                            
+                                                
+
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     
